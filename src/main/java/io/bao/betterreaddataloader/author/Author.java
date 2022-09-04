@@ -20,7 +20,7 @@ public class Author {
 
     @Column("personal_name")
     @CassandraType(type = CassandraType.Name.TEXT)
-    private String personalName;
+    private String personalName = "N/A";
 
     public String getId() {
         return id;
